@@ -1,0 +1,85 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Kufi+Arabic:wght@100..900&family=Playball&family=Sevillana&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color: #fff;
+}
+::selection{
+  background-color: transparent;
+  color: #e44e4c;
+}
+a,h3,h1,h2,h5,h6,p,h4,li {
+  font-family: "Noto Kufi Arabic", sans-serif !important;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Here for Style Hover */
+.btn-41 {
+  z-index: 1;
+  border-radius: 10px;
+  color: white;
+}
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background-color: #004799;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.btn-41:hover {
+  color: #fff !important;
+}
+.btn-41:hover:after {
+  left: auto;
+  left: 0;
+  width: 100%;
+}
+.btn-41:active {
+  top: 2px;
+}
+/* Here for anmation Hover Sales */
+.btn-42 {
+  z-index: 1;
+  border-radius: 10px;
+  color: white;
+}
+.btn-42:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background-color: #e44e4c;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.btn-42:hover {
+  color: #fff !important;
+}
+.btn-42:hover:after {
+  left: auto;
+  /* right: 0; */
+  width: 100%;
+}
+.btn-42:active {
+  top: 2px;
+}
